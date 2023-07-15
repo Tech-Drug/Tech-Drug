@@ -1,0 +1,59 @@
+import turtle
+
+# Create a turtle screen
+screen = turtle.Screen()
+screen.setup(800, 800)
+screen.bgcolor("white")
+
+# Create a turtle instance
+shiva = turtle.Turtle()
+shiva.speed(2)  # Adjust the speed of drawing
+
+# Set pen color and fill color
+shiva.pensize(3)
+shiva.color("blue")
+shiva.fillcolor("lightblue")
+
+# Draw the face of Lord Shiva
+shiva.penup()
+shiva.goto(0, -200)
+shiva.pendown()
+shiva.circle(200)
+
+# Draw the third eye
+shiva.penup()
+shiva.goto(0, 50)
+shiva.pendown()
+shiva.color("red")
+shiva.fillcolor("red")
+shiva.begin_fill()
+shiva.circle(30)
+shiva.end_fill()
+
+# Draw the crescent moon
+shiva.penup()
+shiva.goto(70, 130)
+shiva.pendown()
+shiva.color("gray")
+shiva.fillcolor("gray")
+shiva.begin_fill()
+shiva.circle(30)
+shiva.end_fill()
+
+# Draw the trishula (trident)
+shiva.penup()
+shiva.goto(-80, 40)
+shiva.pendown()
+shiva.color("gray")
+shiva.pensize(6)
+shiva.forward(160)
+shiva.right(120)
+shiva.forward(160)
+shiva.right(120)
+shiva.forward(160)
+
+# Hide the turtle
+shiva.hideturtle()
+
+# Exit on click
+turtle.done()
